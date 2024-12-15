@@ -22,7 +22,7 @@ Access to the airportdb_dump.sql file (2.5 GB). This will install an 8GB databas
 
 ## How to Set Up the Environment
 
-1. Clone the repository to the Desktop of the AWS Instance or your local machine.
+1. Clone the repository <strong>to the Desktop</strong> of the AWS Instance or your local machine.
 
 2. Open the repository in VS Code.
 
