@@ -16,7 +16,7 @@ MySQL Workbench
 
 MySQL Server
 
-Make sure to add MySQL to the PATH when installation is complete
+Make sure to add the MySQL Server 8.0/bin folder to the PATH when installation is complete
 
 Access to the airportdb_dump.sql file (2.5 GB). This will install an 8GB database. Normal run time to install depends on the speed of the machine but could take up to 1 hour. Ask the instructor for access to the file.
 
