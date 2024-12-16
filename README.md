@@ -18,7 +18,7 @@ MySQL Server
 
 Make sure to add the MySQL Server 8.0/bin folder to the PATH when installation is complete
 
-Access to the airportdb_dump.sql file (2.5 GB). This will install an 8GB database. Normal run time to install depends on the speed of the machine but could take up to 1 hour. Ask the instructor for access to the file.
+Access to the airportdb_dump.sql file (2.14 GB). This will install an ~8GB database. Normal run time to install depends on the speed of the machine but could take up to 1 hour. Ask the instructor for access to the file.
 
 ## How to Set Up the Environment
 
@@ -27,11 +27,11 @@ Access to the airportdb_dump.sql file (2.5 GB). This will install an 8GB databas
 2. Open the repository in VS Code.
 
 3. Go to the setup folder and do either of the following
- -  If you are in the AWS instamce, run the `setup.py` file. This will verify that a `student` user exists and grant access to the `student` user for the `airportdb` database.
+ -  If you are in the AWS instance, run the `setup.py` file. This will verify that a `student` user exists and grant access to the `student` user for the `airportdb` database.
 
  - If you are on your local machine, you may need to change the password on line 20 to your root password. Run the `setup.py` file after this change. This will create a `student` user and grant access to the `student` user for the `airportdb` database.
 
-4. Run the `airportdb_dump.sql` file from the terminal using the following command `if you are not in the AWS instance`:
+4. `If you are not in the AWS instance`, run the `airportdb_dump.sql` file from the terminal using the following command:
 ```bash
 mysql -u root -p airportdb < airportdb_dump.sql
 ```
