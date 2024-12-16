@@ -82,4 +82,4 @@ Total Files Graded: 2
 ***********************************
 ```
 
-When you are done grading, you can use the prompt given in the terminal to delete all files in the `tempgrades` folder and it will also delete the answers file. This will allow you to grade the next assignment without any issues. Any answer to the prompt other than `yes` will not delete the files in case you do need to edit any files manually. and you can quickly run the script again by hitting the up arrow in the terminal and pressing enter or by pressing the Play button again.
+When you are done grading, you can use the prompt given in the terminal to delete all files in the `tempgrades` folder and it will also delete the answers file. This will allow you to grade the next assignment without any issues. Any answer to the prompt other than `yes` will not delete the files in case you do need to edit any files manually. You can quickly run the script again by hitting the up arrow in the terminal and pressing enter or by pressing the Play button again.
