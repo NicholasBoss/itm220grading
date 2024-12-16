@@ -50,7 +50,7 @@ This process will take some time to complete. (Approximately 1 hour)
     - The number of queries that passed
     - The queries that failed and details about why they failed.
 
-Note: If a student writes comments that use any of the following words, you may have to manually edit their file to recomment the errors:
+Note: If a student writes comments that use any of the following words, you may have to manually edit their file to recomment the words:
 - `CREATE`
 - `INSERT`
 - `UPDATE`
