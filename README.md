@@ -29,9 +29,9 @@ Access to the airportdb_dump.sql file (2.14 GB). This will install an ~8GB datab
 3. Double check that the Python support extension is installed. If not, install it.
 
 4. Go to the setup folder and do either of the following
- -  If you are in the AWS instance, run the `setup.py` file. This will verify that a `student` user exists and grant access to the `student` user for the `airportdb` database.
+   -  If you are in the AWS instance, run the `setup.py` file. This will verify that a `student` user exists and grant access to the `student` user for the `airportdb` database.
 
- - If you are on your local machine, you may need to change the password on line 20 to your root password. Run the `setup.py` file after this change. This will create a `student` user and grant access to the `student` user for the `airportdb` database.
+   - If you are on your local machine, you may need to change the password on line 20 to your root password. Run the `setup.py` file after this change. This will create a `student` user and grant access to the `student` user for the `airportdb` database.
 
 5. `If you are not in the AWS instance`, run the `airportdb_dump.sql` file from the terminal using the following command:
 ```bash
