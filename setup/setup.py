@@ -8,7 +8,7 @@ except ImportError or ModuleNotFoundError:
     if os_name == 'Windows':
         os.system("pip install mysql-connector-python")
     elif os_name == 'Linux' or os_name == 'Darwin':
-        os.system("pip3 install mysql-connector-python")
+        os.system("pip3 install mysql-connector-python --break-system-packages")
     import mysql.connector
     print("MYSQL module installed")
 
