@@ -829,8 +829,8 @@ else:
                     answer.write(f"{number}. Incorrect!\n")
                     # 1, 5, 8 are the USE statments
                     # check for certain clauses and print that they were used
-                    answer.write("------QUERY------\n")
-                    answer.write(f"{command}\n")
+                    # answer.write("------QUERY------\n")
+                    # answer.write(f"{command}\n")
                     answer.write("-----CLAUSES-----\n")
                     if a_number == 2:
                         # debug.write(new_query1_list)
