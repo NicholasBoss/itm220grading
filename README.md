@@ -6,6 +6,10 @@ The ITM 220 Grading Repository is to be used by graders to grade assignments for
 
 ## System Requirements
 
+Access to the Linux Server provided by the course.
+
+OR
+
 Access to the AWS Instance provided by the course.
 
 OR 
@@ -30,12 +34,18 @@ Access to the airportdb_dump.sql file (2.14 GB) and the passenger_modifications.
 
 3. Double check that the Python support extension is installed. If not, install it.
 
-4. Go to the setup folder and do either of the following
+4. Go to the setup folder and do one of the following
+   -  If you are using the Linux Server in your class, use the files that begin with `LS` to grade. In order to grade with the `LS` files, each time you grade, you will need to run the following command in a separate terminal. The password is `ITM220stud3nt!`:
+        ```bash
+        ssh -L 3307:127.0.0.1:3306 student@157.201.16.128
+        ```
+        This command causes the port 3307 on your local machine to act as if it was port 3306 on the server allowing you to connect to the MySQL Server on the Linux Server from your local machine. 
+        While this is running, you can run the grading files normally.
    -  If you are in the AWS instance, run the `setup.py` file. This will verify that a `student` user exists and grant access to the `student` user for the `airportdb` database.
 
    - If you are on your local machine, you may need to change the password on line 20 to your root password. Run the `setup.py` file after this change. This will create a `student` user and grant access to the `student` user for the `airportdb` database.
 
-5. `If you are not in the AWS instance`, run the `airportdb_dump.sql` and `passenger_modifications.sql` files from the terminal using the following commands:
+5. `If you want to use this system locally`, run the `airportdb_dump.sql` and `passenger_modifications.sql` files from the terminal using the following commands <strong>(MAC and Linux)</strong>:
 ```bash
 mysql -u root -p airportdb < airportdb_dump.sql
 ```
@@ -43,7 +53,25 @@ mysql -u root -p airportdb < airportdb_dump.sql
 ```bash
 mysql -u root -p airportdb < passenger_modifications.sql
 ```
-This process will take some time to complete. (Approximately 1 hour)
+
+For <strong>Windows</strong>, you will need to log into root using the following command:
+```bash
+mysql -u root -p
+```
+
+Then run the following commands:
+```bash
+source airportdb_dump.sql
+```
+
+```bash
+USE airportdb;
+```
+
+```bash
+source passenger_modifications.sql
+```
+This process will take some time to complete depending on the hardware on your computer.
 
 ## How to Grade Assignments
 
