@@ -34,20 +34,11 @@ def format_list(list):
     return new_list
 
 # Connect to the database
-# SSH Connection Details
-SSH_HOST = ""
-SSH_PORT = 22
-SSH_USER = ""
-SSH_PASSWORD = ""  # Or use ssh_pkey="path/to/private/key.pem"
 
-# MySQL Connection Details
-MYSQL_USER = "student"
-MYSQL_PASSWORD = ""
-MYSQL_DB = "airportdb"
 with SSHTunnelForwarder(
-        (SSH_HOST, SSH_PORT),
-        ssh_username=SSH_USER,
-        ssh_password=SSH_PASSWORD,  # Use ssh_pkey if you're using an SSH key
+        ('157.201.16.128', '22'),
+        ssh_username='student',
+        ssh_password='ITM220stud3nt!',  # Use ssh_pkey if you're using an SSH key
         remote_bind_address=("127.0.0.1", 3306),  # Forward remote MySQL
         local_bind_address=('127.0.0.1', 3307),  # Ensure the port is available on localhost
     ) as tunnel:
@@ -59,9 +50,9 @@ with SSHTunnelForwarder(
         mydb = mysql.connector.connect(
             host="127.0.0.1",  # Localhost because of SSH tunnel
             port=tunnel.local_bind_port,  # Dynamically assigned local port
-            user=MYSQL_USER,
-            password=MYSQL_PASSWORD,
-            database=MYSQL_DB
+            user='student',
+            password='ITM220stud3nt!',
+            database='airportdb'
         )
         #For local testing
         # mydb = mysql.connector.connect(
