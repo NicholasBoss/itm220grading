@@ -36,7 +36,7 @@ def format_list(list):
 # Connect to the database
 
 with SSHTunnelForwarder(
-        ('157.201.16.128', '22'),
+        ('157.201.16.128', 22),
         ssh_username='student',
         ssh_password='ITM220stud3nt!',  # Use ssh_pkey if you're using an SSH key
         remote_bind_address=("127.0.0.1", 3306),  # Forward remote MySQL
