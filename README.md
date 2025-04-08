@@ -98,7 +98,7 @@ These words are used in the grading script and may cause the script to fail if t
 If there are no errors and all queries pass, you may see a result simiar to the following:
 ```bash
 ***********************************
-File: wk07_john_doe.sql
+File: wk07_jane_doe.sql
 --------RESULTS-------
 24/24 Alias Used
 7/7 Queries Written
