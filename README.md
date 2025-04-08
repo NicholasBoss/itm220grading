@@ -2,7 +2,7 @@
 
 The ITM 220 Grading Repository is to be used by graders to grade assignments for the ITM 220 course. This repository is public to allow for easy cloning to the virtual machine provided for the course.
 
-[Video Tutorial](https://youtu.be/GGJh0-Q1HV8)
+[Video Tutorial](https://youtu.be/lyacRxHZEAM)
 
 ## System Requirements
 
